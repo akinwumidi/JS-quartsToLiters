@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.app h1{
+   padding:0 0 0 10px ;
+   border-left: 3px solid tomato;
+   margin: 0 0 20px 0;
+}
+.appBox{
+    background: #eee;
+    padding: 20px 10px;
+    margin: 0 0 20px 0;
+}
+input[type="text"]{
+    padding: 8px;
+    outline:none;
+}
+.appBox button{
+    border: 1px solid tomato;
+    border-right: 3px solid tomato;
+    padding: 10px 20px;
+    color: tomato;
+    display: block;
+}
+.appBox button:hover{
+    color: white;
+    background: tomato;
+    border-right: 3px solid black;
+}
+#computed{
+    border: 1px solid tomato;
+    border-left: 3px solid tomato;
+    padding: 8px;
+}
