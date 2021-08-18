@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quartz to litre program</title>
+<script>
+    // Defining Table
+    // Input(s) : A volume in Quarts
+    // Processing : Convert the volume from Quartz to Litres
+    // Output(s) : The volume converted to Litres
+
+    function Quartz_to_ltr_func() {
+        var user_input = document.getElementById('value_in_quartz').value;
+        var output_div = document.getElementById('computed');
+        process_input= parseFloat(user_input);
+
+        //1 quart (qt) = 0.946353 liter (l)
+        var result = process_input * 0.946353;
+        output_div.innerHTML = user_input + " Quartz is Equivalent to " + result + " Litres";
+
+    }
+</script>
+</head>
+
+<body>
+<h1>Quartz to volume converter Application</h1>
+<label>Please enter volume in quartz here</label>
+<input type="text" id="value_in_quartz">
+<button type="button" onclick="Quartz_to_ltr_func()">Compute</button>
+<div id="computed">Please click the compute button to calculate_____________________</div>
+
+</body>
+</html>
