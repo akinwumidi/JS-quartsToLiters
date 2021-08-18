@@ -1,3 +1,4 @@
+/* General reset rules */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,20 +13,24 @@ body{
 
 
 }
+/* Styling h1 heading */
 .app h1{
    padding:0 0 0 10px ;
    border-left: 3px solid tomato;
    margin: 0 0 20px 0;
 }
+/* styling user input holder */
 .appBox{
     background: #eee;
     padding: 20px 10px;
     margin: 0 0 20px 0;
 }
+
 input[type="text"]{
     padding: 8px;
     outline:none;
 }
+/* cool button styling */
 .appBox button{
     border: 1px solid tomato;
     border-right: 3px solid tomato;
@@ -38,6 +43,7 @@ input[type="text"]{
     background: tomato;
     border-right: 3px solid black;
 }
+/* styling outbox division */
 #computed{
     border: 1px solid tomato;
     border-left: 3px solid tomato;
